@@ -104,7 +104,8 @@ CREATE TABLE `settings` (
     initVoteSystem({
         baseUrl: 'https://your-vote-system-domain.com' // 替换为您的投票系统域名
     });
-</script>```
+</script>
+```
 
 ## 数据库结构说明
 | 表名       | 主要字段                     | 说明                          |
