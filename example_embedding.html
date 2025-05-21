@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例网站 - 投票系统嵌入演示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgba(255, 255, 255, 0.8); /* 白色背景，透明度80% */
+        margin: 0; /* 移除页面默认边距 */
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .content {
+            margin-top: 40px;
+        }
+        
+        .article {
+            margin-bottom: 40px;
+        }
+        
+        h1, h2 {
+            color: #165DFF;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #165DFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0d47a1;
+        }
+		
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>示例网站</h1>
+            <p>这是一个展示如何嵌入投票系统的示例页面</p>
+        </div>
+    </header>
+    
+    <div class="container content">
+        <div class="article">
+            <h2>文章标题</h2>
+            <p>
+                这是一篇示例文章，内容可以是任何您想要展示的信息。
+                在文章的底部，我们嵌入了一个投票系统，您可以通过点击右下角的按钮参与投票。
+            </p>
+            <p>
+                投票系统采用了现代化的设计，具有良好的用户体验和响应式布局。
+                无论您是在电脑上还是在移动设备上访问，都能获得一致的投票体验。
+            </p>
+            <p>
+                投票结果会实时更新，您可以随时查看当前的投票情况。
+                所有投票数据都是匿名的，我们尊重您的隐私。
+            </p>
+            
+            <div class="mt-6">
+                <h3>相关推荐</h3>
+                <ul>
+                    <li><a href="#">文章链接1</a></li>
+                    <li><a href="#">文章链接2</a></li>
+                    <li><a href="#">文章链接3</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="article">
+            <h2>如何嵌入投票系统</h2>
+            <p>
+                要在您的网站中嵌入我们的投票系统，只需添加以下代码：
+            </p>
+            <pre>&lt;script src="https://your-vote-system-domain.com/embed.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 初始化投票系统
+    initVoteSystem({
+        baseUrl: 'https://your-vote-system-domain.com' // 替换为您的投票系统域名
+    });
+&lt;/script&gt;</pre>
+            <p>
+                您可以根据需要自定义投票系统的外观和行为，例如更改主题、动画效果等。
+                更多详细信息请参考我们的文档。
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 示例网站 - 保留所有权利</p>
+        </div>
+    </footer>
+    
+    <!-- 嵌入投票系统 -->
+    <script src="http://www.7ml.cn/1/embed.js"></script>
+    <script>
+        // 初始化投票系统
+        initVoteSystem({
+            baseUrl: 'http://www.7ml.cn/1' // 替换为您的投票系统域名
+        });
+    </script>
+</body>
+</html>    
